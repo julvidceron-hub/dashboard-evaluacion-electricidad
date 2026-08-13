@@ -1,19 +1,285 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dashboard Docente - Evaluación de Electricidad</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dashboard Docente - Evaluación de Electricidad
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .header {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .header h1 {
+            margin: 0 0 8px 0;
+        }
+
+        .header p {
+            margin: 0;
+            color: #6b7280;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .kpi {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .kpi-title {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+
+        .kpi-value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .placeholder {
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #d1d5db;
+            border-radius: 10px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 1000px) {
+
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .dashboard {
+                padding: 15px;
+            }
+
+            .kpi-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Dashboard Docente</h1>
+    <main class="dashboard">
 
-    <p>
-        Evaluación diagnóstica de Electricidad Industrial
-    </p>
+        <!-- ENCABEZADO -->
+
+        <section class="header">
+
+            <h1>
+                Dashboard Docente
+            </h1>
+
+            <p>
+                Evaluación diagnóstica de Electricidad Industrial
+            </p>
+
+        </section>
+
+
+        <!-- INDICADORES -->
+
+        <section class="kpi-grid">
+
+            <div class="kpi">
+
+                <div class="kpi-title">
+                    Evaluaciones realizadas
+                </div>
+
+                <div class="kpi-value">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <div class="kpi-title">
+                    Promedio del grupo
+                </div>
+
+                <div class="kpi-value">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <div class="kpi-title">
+                    Desempeño destacado
+                </div>
+
+                <div class="kpi-value">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <div class="kpi-title">
+                    En desarrollo
+                </div>
+
+                <div class="kpi-value">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <div class="kpi-title">
+                    Requieren refuerzo
+                </div>
+
+                <div class="kpi-value">
+                    --
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISTRIBUCIÓN DEL DESEMPEÑO -->
+
+        <section class="section">
+
+            <h2>
+                Distribución del desempeño
+            </h2>
+
+            <div class="placeholder">
+
+                Gráfica de distribución del desempeño
+
+            </div>
+
+        </section>
+
+
+        <!-- DESEMPEÑO POR CONCEPTO -->
+
+        <section class="section">
+
+            <h2>
+                Desempeño por concepto
+            </h2>
+
+            <div class="placeholder">
+
+                Gráfica de desempeño por concepto
+
+            </div>
+
+        </section>
+
+
+        <!-- PREGUNTAS CON MAYOR DIFICULTAD -->
+
+        <section class="section">
+
+            <h2>
+                Preguntas con mayor dificultad
+            </h2>
+
+            <div class="placeholder">
+
+                Análisis de preguntas
+
+            </div>
+
+        </section>
+
+
+        <!-- ESTUDIANTES QUE REQUIEREN INTERVENCIÓN -->
+
+        <section class="section">
+
+            <h2>
+                Estudiantes que requieren intervención
+            </h2>
+
+            <div class="placeholder">
+
+                Lista de estudiantes
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
